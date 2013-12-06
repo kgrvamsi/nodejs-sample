@@ -2,7 +2,7 @@ var sys = require("sys"),
 my_http = require("http");  
 my_http.createServer(function(request,response){  
     sys.puts("I got kicked");  
-    response.writeHeader(200, {"Content-Type": "text/plain"});  
+    response.writeHeader(200, {"Content-Type": "text/html"});  
     response.write("<h1>The Server is Installed successfully with Node</h1>");  
     response.end();  
 }).listen(80);  
