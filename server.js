@@ -8,6 +8,6 @@ my_http.createServer(function(request,response){
     "Server Type"+  os.type() +"\n"+
     "Server Arch Type"+  os.arch());  
     response.end();  
-}).listen(80);  
-sys.puts("Server Running on 8080");
+}).listen(4000);  
+sys.puts("Server Running on 4000");
      
