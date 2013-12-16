@@ -5,7 +5,7 @@ my_http.createServer(function(request,response){
     sys.puts("I got kicked");  
     response.writeHeader(200, {"Content-Type": "text/html"});  
     response.write("<h1>The Server is Installed successfully with Node</h1>"+
-    "Server Type"+  os.type() +"\n"+
+    "Server Type\n"+  os.type() '\n'+
     "Server Arch Type"+  os.arch());  
     response.end();  
 }).listen(4000);  
